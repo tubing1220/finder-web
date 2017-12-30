@@ -1,6 +1,8 @@
 <?php
 
 $config = array(
+
+
     'db'=>array(
         'database_type' => 'mysql',
         'database_name' => 'finder_web',
@@ -11,6 +13,15 @@ $config = array(
         'collation' => 'utf8_unicode_ci',
         'port' => 5500,
     ),
+
+    'redis' => array(
+        'hostname' => '127.0.0.1',
+        'port' => 16379,
+        'timeout' => 3,
+    ),
+
+
+
 );
 
 return $config;
