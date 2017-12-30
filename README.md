@@ -4,4 +4,8 @@
 2: if apache server create .htaccess file
 3: create index.php
 4: create folder app config public bootstrap
+5: add config.php and require in bootstrap/app.php
+6: add Dependencies and add monolog and add db
+7: create Routes
+8: add slim/php-view
 
