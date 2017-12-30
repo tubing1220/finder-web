@@ -8,4 +8,5 @@
 6: add Dependencies and add monolog and add db
 7: create Routes
 8: add slim/php-view
+9: add app controllers libs views
 
