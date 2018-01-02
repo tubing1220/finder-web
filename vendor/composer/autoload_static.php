@@ -34,6 +34,10 @@ class ComposerStaticInit62a07ef19c4f389992481ce7340fbb16
         array (
             'FastRoute\\' => 10,
         ),
+        'A' => 
+        array (
+            'Aura\\Autoload\\' => 14,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -68,6 +72,10 @@ class ComposerStaticInit62a07ef19c4f389992481ce7340fbb16
         'FastRoute\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/fast-route/src',
+        ),
+        'Aura\\Autoload\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/aura/autoload/src',
         ),
     );
 

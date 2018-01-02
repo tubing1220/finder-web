@@ -9,4 +9,5 @@
 7: create Routes
 8: add slim/php-view
 9: add app controllers libs views
+10:add  composer require aura/autoload 
 
