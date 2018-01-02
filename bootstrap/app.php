@@ -5,8 +5,15 @@ use \Psr\Http\Message\ResponseInterface as Response;
 
 
 //loader
-// instantiate
+//instantiate
 $loader = new \Aura\Autoload\Loader;
+$loader->addPrefix('App\Controller', __DIR__ . '/../app/controllers');
+$loader->addPrefix('App\Lib\Model', __DIR__ . '/../app/libs/models');
+$loader->addPrefix('App\Lib\Service', __DIR__ . '/../app/libs/services');
+$loader->register();
+/** example
+*/
+/*
 $loader->addPrefix('Foo\Bar', '/path/to/foo-bar/src');
 $loader->addPrefix('Foo\Bar', '/path/to/foo-bar/tests');
 $loader->setPrefixes(array(
@@ -33,11 +40,7 @@ $loader->register();
 $baz = new \Foo\Bar\Baz;
 // examine the debug information
 var_dump($loader->getDebug());
-
-
-
-
-
+ */
 
 //加载config.php
 $config = require '../config/config.php';
@@ -70,6 +73,10 @@ $container['db'] = function ($config) {
 
 //添加view
 $container['view'] = new \Slim\Views\PhpRenderer('../app/views/');
+
+
+
+
 
 
 //add routes
