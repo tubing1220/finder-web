@@ -6,7 +6,7 @@ $config = array(
     'addContentLengthHeader'=>false,//allows the web server to set the Content-Length header which makes Slim behave more predictably
 
     'db'=>array(
-        'dbname'    => 'finder_web',
+        'dbname'    => 'test',
         'host'      => '127.0.0.1',
         'username'  => 'root',
         'password'  => '',

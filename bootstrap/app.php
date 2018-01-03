@@ -75,21 +75,36 @@ $container['db'] = function ($config) {
 $container['view'] = new \Slim\Views\PhpRenderer('../app/views/');
 
 
-
-
-
-
 //add routes
-$app->get('/', function (Request $request, Response $response) {
+$app->post('/{class}/{method}', function(Request $request, Response $response) use ($app) {
     $params = $request->getQueryParams();
-    $response->getBody()->write("Hello, world");
+    $item = explode('/', $params['_url']);
+    $class =$item[1];
+    $method=$item[2];
+    $resource = \App\Controller\BaseController::load($app,$request,$response,$class);
+    if ($resource === null) {
+        $response->getBody()->write('Class' . $class . ' not found');
+    } else {
+        $resource->$method();
+    }
 
-    return $response;
+
 });
 
 
+/*
+$app->get('/', function (Request $request, Response $response, array $args) use ($app) {
+    //$params = $request->getQueryParams();
+    //$name = $args['name'];
+    $response->getBody()->write("Hello, world");
+    return $response;
+});
 
+$app->post('/', function (Request $request, Response $response, array $args) use ($app) {
+    $data = $request->getParsedBody();
 
+});
+*/
 
 
 
