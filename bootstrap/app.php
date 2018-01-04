@@ -45,6 +45,11 @@ var_dump($loader->getDebug());
 //加载config.php
 $config = require '../config/config.php';
 
+
+//定义全局变量
+global $_application;
+
+
 $app = new \Slim\App(['settings' => $config]);
 
 
@@ -74,6 +79,8 @@ $container['db'] = function ($c) use ($config) {
 //添加view
 $container['view'] = new \Slim\Views\PhpRenderer('../app/views/');
 
+//全局变量
+$_application = $app;
 
 //add routes
 $app->post('/{class}/{method}', function(Request $request, Response $response) use ($app) {

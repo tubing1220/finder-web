@@ -24,7 +24,7 @@ class TestController extends BaseController {
         /**
          * 调用model或者service
          */
-        $testService = new TestService();
+        $testService = new TestService($this->app);
 
         $pdo = $testService->test();
         var_dump($pdo);

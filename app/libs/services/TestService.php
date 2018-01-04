@@ -10,9 +10,9 @@ class TestService extends BaseService {
 
     public function test(){
 
-        $test = new TestModel();
+        $test = new TestModel($this->app);
 
-        //return $test->test();
+        return $test->test();
 
 
     }
