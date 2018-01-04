@@ -5,7 +5,7 @@ use \Slim\App;
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
 
-class BaseController {
+class BaseController  {
 
 
     protected $app;
@@ -17,7 +17,6 @@ class BaseController {
         $this->request  = $request;
         $this->response = $response;
     }
-
 
     public static function load(App $app,Request $request,Response $response,$uri_class)
     {
