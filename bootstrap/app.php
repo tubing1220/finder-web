@@ -83,7 +83,7 @@ $container['view'] = new \Slim\Views\PhpRenderer('../app/views/');
 $_application = $app;
 
 //add routes
-$app->post('/{class}/{method}', function(Request $request, Response $response) use ($app) {
+$app->get('/{class}/{method}', function(Request $request, Response $response) use ($app) {
     $params = $request->getQueryParams();
     $item = explode('/', $params['_url']);
     $class =$item[1];
