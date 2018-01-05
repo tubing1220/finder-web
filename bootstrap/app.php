@@ -43,7 +43,7 @@ var_dump($loader->getDebug());
  */
 
 //加载config.php
-$config = require '../config/config.php';
+$config = require __DIR__ . '/../config/config.php';
 
 
 //定义全局变量
@@ -83,11 +83,11 @@ $container['view'] = new \Slim\Views\PhpRenderer('../app/views/');
 $_application = $app;
 
 //add routes
-$app->get('/{class}/{method}', function(Request $request, Response $response) use ($app) {
+//$app->get('/{class}/{method}', function(Request $request, Response $response) use ($app) {
+$app->get('/', function(Request $request, Response $response) use ($app) {
     $params = $request->getQueryParams();
-    $item = explode('/', $params['_url']);
-    $class =$item[1];
-    $method=$item[2];
+    $class =$params['class'];
+    $method=$params['method'];
     $resource = \App\Controller\BaseController::load($app,$request,$response,$class);
     if ($resource === null) {
         $response->getBody()->write('Class' . $class . ' not found');
