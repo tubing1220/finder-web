@@ -15,7 +15,8 @@ class ArticleController extends BaseController {
 		$result['code'] = 0;
 		$result['msg'] = 'success';
 		$result['data'] = $category_list;
-		echo json_encode($result);
+        $this->response->getBody()->write(json_encode($result));
+		//echo json_encode($result);
     }
 
     /**
