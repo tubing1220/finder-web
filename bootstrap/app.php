@@ -87,7 +87,7 @@ $_application = $app;
 $app->get('/', function(Request $request, Response $response) use ($app) {
     $params = $request->getQueryParams();
     $class =$params['access'];
-    $method=$params['method'];
+    $method=$params['submit'];
     $resource = \App\Controller\BaseController::load($app,$request,$response,$class);
     if ($resource === null) {
         $response->getBody()->write('Class' . $class . ' not found');
