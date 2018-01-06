@@ -86,7 +86,7 @@ $_application = $app;
 //$app->get('/{class}/{method}', function(Request $request, Response $response) use ($app) {
 $app->get('/', function(Request $request, Response $response) use ($app) {
     $params = $request->getQueryParams();
-    $class =$params['class'];
+    $class =$params['access'];
     $method=$params['method'];
     $resource = \App\Controller\BaseController::load($app,$request,$response,$class);
     if ($resource === null) {
