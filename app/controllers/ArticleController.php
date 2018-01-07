@@ -10,7 +10,8 @@ class ArticleController extends BaseController {
 	 */
     public function categoryList()
 	{
-		// 文章分类列表 
+		// 文章分类列表
+        $category_list['after'] = 'has_next_page';
 		$category_list['list'] = [['id'=>'10000','name'=>'前端'],['id'=>'10001','name'=>'Android'],['id'=>'10002','name'=>'后端'],['id'=>'10003','name'=>'人工智能'],['id'=>'10004','name'=>'iOS'],['id'=>'10005','name'=>'工具资源']];
 		$result['code'] = 0;
 		$result['msg'] = 'success';
