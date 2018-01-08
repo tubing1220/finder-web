@@ -45,7 +45,19 @@
 |id|int|20|no|主键、自增|认证id 自增|
 |user_id|int|20|no|用户id|无|
 |uid|varchar|255|no|第三方用户id||
-|identity_type|varchar|255|yes|登录类型 登录类型（手机号 邮箱 用户名）或第三方应用名称（微信 微博等）|品牌状态:默认为0、新品为1，抢空为2|
+|identity_type|varchar|255|yes|登录类型 登录类型（手机号 邮箱 用户名）或第三方应用名称（微信 微博等）|无|
 |identifier|varchar|255|yes|标识（手机号 邮箱 用户名或第三方应用的唯一标识）|无|
-|access_token|varchar|255|yes|用户token 第三方token|APP模板，表示调用哪个模板：SEARCH、BRAND、SPECIAL|
-|access_expire|int|11|yes|用户访问 token 有效期时间|请求内容，为native API请求或webview打开网页时使用|
+|access_token|varchar|255|yes|用户token 第三方token|无|
+|access_expire|int|11|yes|用户访问 token 有效期时间|无|
+
+###	finder_article 用户授权信息表
+|字段|类型|长度|是否为空|说明|备注|
+|:-:|:-:|:-:|:-:|:--:|:-:|
+|id|int|20|no|主键、自增|认证id 自增|
+|user_id|int|20|no|用户id|无|
+|name|varchar|100|yes|作者昵称|无|
+|title|varchar|100|yes|文章标题|无|
+|desc|text|无|yes|文章描述|无|
+|create_time|int|11|yes|创建时间|无|
+|update_time|int|11|yes|修改时间|无|
+|is_del|tinyint|4|yes|是否已删除 0:未删除，1：已删除,默认:0|无|
