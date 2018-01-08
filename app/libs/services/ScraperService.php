@@ -9,16 +9,17 @@ class ScraperService extends BaseService {
 
     public function getCategoryDetail($request_param,$page,$limit){
 
-        if($page==1)
+        if(empty($page))
         {
             $before='';}
         else{
-            $before='';
+            $before=$page;
         }
 
         $url = $this->app->getContainer()->settings['trueScraperWebsite'].'&before='.$before.'&limit='.$limit .'&category='.$request_param['true_category_id'];
 
         $data = array();
+        $last_v =array();
 
         $client = new Client();
         $res = $client->request('GET', $url);
@@ -41,9 +42,13 @@ class ScraperService extends BaseService {
                 $data_e['title']=$v['title'];
                 $data_e['desc']=$v['content'];
                 $data_e['createtime']=intval($v['buildTime']);
+                $last_v = $v;
                 $data[] = $data_e;
             }
-            return $data;
+                $data_final['list'] =   $data;
+                $data_final['page'] =   $last_v['rankIndex'];
+
+            return $data_final;
 
             }
 

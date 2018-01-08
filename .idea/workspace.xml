@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fedeb850-447f-48cd-a3d8-702b8b816b4a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ArticleController.php" afterPath="$PROJECT_DIR$/app/controllers/ArticleController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/services/ScraperService.php" afterPath="$PROJECT_DIR$/app/libs/services/ScraperService.php" />
     </list>
     <ignored path="finder-web.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,8 +43,8 @@
       <file leaf-file-name="ArticleController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/ArticleController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3715847" vertical-offset="1461" max-vertical-offset="2235">
-              <caret line="111" column="37" selection-start-line="111" selection-start-column="37" selection-end-line="111" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.48087433" vertical-offset="1656" max-vertical-offset="2310">
+              <caret line="128" column="16" selection-start-line="128" selection-start-column="16" selection-end-line="134" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -62,8 +63,8 @@
       <file leaf-file-name="ScraperService.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/libs/services/ScraperService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.791666" vertical-offset="143" max-vertical-offset="975">
-              <caret line="38" column="36" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="36" />
+            <state vertical-scroll-proportion="-15.625" vertical-offset="330" max-vertical-offset="1050">
+              <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="48" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -766,14 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/libs/services/ScraperService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.791666" vertical-offset="143" max-vertical-offset="975">
-          <caret line="38" column="36" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-19.375" vertical-offset="0" max-vertical-offset="675">
@@ -782,10 +775,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/libs/services/ScraperService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.625" vertical-offset="330" max-vertical-offset="1050">
+          <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="48" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/ArticleController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3715847" vertical-offset="1461" max-vertical-offset="2235">
-          <caret line="111" column="37" selection-start-line="111" selection-start-column="37" selection-end-line="111" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.48087433" vertical-offset="1656" max-vertical-offset="2310">
+          <caret line="128" column="16" selection-start-line="128" selection-start-column="16" selection-end-line="134" selection-end-column="72" />
           <folding />
         </state>
       </provider>

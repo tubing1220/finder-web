@@ -76,11 +76,11 @@ class ArticleController extends BaseController {
         $request_param = array();
         $params = $this->request->getQueryParams();
         $list = $this->app->getContainer()->settings['categoryList'];
-        if(empty($params['page'])){
-            $page = 1;
+        if(empty($params['rankIndex'])){
+            $page = '';
         }
         else{
-            $page =  $params['page'];
+            $page =  $params['rankIndex'];
         }
         if(empty($params['limit'])){
             $limit = 20;
@@ -97,6 +97,8 @@ class ArticleController extends BaseController {
         }
 
         if(empty($request_param)){
+            $category_list['after'] = '';
+            $category_list['rankIndex']=0;
             $result['code'] = -1;
             $result['msg'] = 'param id is wrong';
             $result['data'] = array();
@@ -109,6 +111,7 @@ class ArticleController extends BaseController {
 
             if(empty($scraper)){
                 $category_list['after'] = '';
+                $category_list['rankIndex']=0;
                 $result['code'] = -2;
                 $result['msg'] = 'get no data from juejin web';
                 $result['data'] = $category_list;
@@ -116,6 +119,7 @@ class ArticleController extends BaseController {
             }
             else if($scraper===1){
                 $category_list['after'] = '';
+                $category_list['rankIndex']=0;
                 $result['code'] = 0;
                 $result['msg'] = 'success';
                 $result['data'] = $category_list;
@@ -123,7 +127,8 @@ class ArticleController extends BaseController {
             }
             else{
                 $category_list['after'] = 'has_next_page';
-                $category_list['list'] = $scraper;
+                $category_list['rankIndex'] = $scraper['page'];
+                $category_list['list'] = $scraper['list'];;
                 $result['code'] = 0;
                 $result['msg'] = 'success';
                 $result['data'] = $category_list;
