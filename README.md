@@ -12,4 +12,6 @@
 10:add composer require aura/autoload
 11:composer dump-autoload --optimize
 12:composer require fabpot/goutte
+13:composer require GuzzleHttp
+14:add dbIndex.md record table tips
 
