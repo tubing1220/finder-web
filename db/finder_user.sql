@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2018-01-08 19:45:34
+Date: 2018-01-08 20:46:21
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -22,9 +22,9 @@ DROP TABLE IF EXISTS `finder_user`;
 CREATE TABLE `finder_user` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '用户id',
   `user_name` varchar(100) DEFAULT NULL COMMENT '用户昵称',
-  `user_token` varchar(255) DEFAULT NULL COMMENT '用户token 唯一验证信息 ',
+  `user_token` varchar(255) DEFAULT NULL COMMENT '用户token 唯一验证信息',
   `password` char(32) DEFAULT NULL COMMENT '用户密码',
-  `realname` varchar(50) DEFAULT NULL COMMENT '用户真是姓名',
+  `realname` varchar(50) DEFAULT NULL COMMENT '用户真实姓名',
   `email` varchar(100) DEFAULT NULL COMMENT '用户邮箱',
   `phone` varchar(100) DEFAULT NULL COMMENT '用户手机号',
   `header_url` varchar(1000) DEFAULT NULL COMMENT '用户头像地址',
