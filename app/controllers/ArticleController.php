@@ -111,21 +111,22 @@ class ArticleController extends BaseController {
                 $category_list['after'] = '';
                 $result['code'] = -2;
                 $result['msg'] = 'get no data from juejin web';
-                $result['data'] = array();
+                $result['data'] = $category_list;
                 $this->response->getBody()->write(json_encode($result));
             }
             else if($scraper===1){
                 $category_list['after'] = '';
                 $result['code'] = 0;
                 $result['msg'] = 'success';
-                $result['data'] = array();
+                $result['data'] = $category_list;
                 $this->response->getBody()->write(json_encode($result));
             }
             else{
                 $category_list['after'] = 'has_next_page';
+                $category_list['list'] = $scraper;
                 $result['code'] = 0;
                 $result['msg'] = 'success';
-                $result['data'] = $scraper;
+                $result['data'] = $category_list;
                 $this->response->getBody()->write(json_encode($result));
 
             }
