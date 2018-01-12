@@ -10,6 +10,7 @@ $loader = new \Aura\Autoload\Loader;
 $loader->addPrefix('App\Controller', __DIR__ . '/../app/controllers');
 $loader->addPrefix('App\Lib\Model', __DIR__ . '/../app/libs/models');
 $loader->addPrefix('App\Lib\Service', __DIR__ . '/../app/libs/services');
+$loader->addPrefix('App\Lib\Third', __DIR__ . '/../app/libs/third');
 $loader->register();
 /** example
 */
