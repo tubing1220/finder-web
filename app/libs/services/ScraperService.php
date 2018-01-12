@@ -9,7 +9,7 @@ class ScraperService extends BaseService {
 
     public function getCategoryDetail($request_param,$page,$limit){
 
-        if(empty($page))
+        if(empty($page) || $page==0)
         {
             $before='';}
         else{
