@@ -14,4 +14,5 @@
 12:composer require fabpot/goutte
 13:composer require GuzzleHttp
 14:add dbIndex.md record table tips
+15:composer require  apache/thrift
 

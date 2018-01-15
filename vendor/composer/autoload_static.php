@@ -127,6 +127,13 @@ class ComposerStaticInit62a07ef19c4f389992481ce7340fbb16
     );
 
     public static $prefixesPsr0 = array (
+        'T' => 
+        array (
+            'Thrift' => 
+            array (
+                0 => __DIR__ . '/..' . '/apache/thrift/lib/php/lib',
+            ),
+        ),
         'P' => 
         array (
             'Pimple' => 
@@ -466,6 +473,61 @@ class ComposerStaticInit62a07ef19c4f389992481ce7340fbb16
         'Symfony\\Component\\DomCrawler\\Image' => __DIR__ . '/..' . '/symfony/dom-crawler/Image.php',
         'Symfony\\Component\\DomCrawler\\Link' => __DIR__ . '/..' . '/symfony/dom-crawler/Link.php',
         'Symfony\\Polyfill\\Mbstring\\Mbstring' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/Mbstring.php',
+        'Thrift\\Base\\TBase' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Base/TBase.php',
+        'Thrift\\ClassLoader\\ThriftClassLoader' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/ClassLoader/ThriftClassLoader.php',
+        'Thrift\\Exception\\TApplicationException' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Exception/TApplicationException.php',
+        'Thrift\\Exception\\TException' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Exception/TException.php',
+        'Thrift\\Exception\\TProtocolException' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Exception/TProtocolException.php',
+        'Thrift\\Exception\\TTransportException' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Exception/TTransportException.php',
+        'Thrift\\Factory\\TBinaryProtocolFactory' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Factory/TBinaryProtocolFactory.php',
+        'Thrift\\Factory\\TCompactProtocolFactory' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Factory/TCompactProtocolFactory.php',
+        'Thrift\\Factory\\TJSONProtocolFactory' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Factory/TJSONProtocolFactory.php',
+        'Thrift\\Factory\\TProtocolFactory' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Factory/TProtocolFactory.php',
+        'Thrift\\Factory\\TStringFuncFactory' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Factory/TStringFuncFactory.php',
+        'Thrift\\Factory\\TTransportFactory' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Factory/TTransportFactory.php',
+        'Thrift\\Protocol\\JSON\\BaseContext' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Protocol/JSON/BaseContext.php',
+        'Thrift\\Protocol\\JSON\\ListContext' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Protocol/JSON/ListContext.php',
+        'Thrift\\Protocol\\JSON\\LookaheadReader' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Protocol/JSON/LookaheadReader.php',
+        'Thrift\\Protocol\\JSON\\PairContext' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Protocol/JSON/PairContext.php',
+        'Thrift\\Protocol\\SimpleJSON\\CollectionMapKeyException' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Protocol/SimpleJSON/CollectionMapKeyException.php',
+        'Thrift\\Protocol\\SimpleJSON\\Context' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Protocol/SimpleJSON/Context.php',
+        'Thrift\\Protocol\\SimpleJSON\\ListContext' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Protocol/SimpleJSON/ListContext.php',
+        'Thrift\\Protocol\\SimpleJSON\\MapContext' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Protocol/SimpleJSON/MapContext.php',
+        'Thrift\\Protocol\\SimpleJSON\\StructContext' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Protocol/SimpleJSON/StructContext.php',
+        'Thrift\\Protocol\\TBinaryProtocol' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Protocol/TBinaryProtocol.php',
+        'Thrift\\Protocol\\TBinaryProtocolAccelerated' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Protocol/TBinaryProtocolAccelerated.php',
+        'Thrift\\Protocol\\TCompactProtocol' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Protocol/TCompactProtocol.php',
+        'Thrift\\Protocol\\TJSONProtocol' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Protocol/TJSONProtocol.php',
+        'Thrift\\Protocol\\TMultiplexedProtocol' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Protocol/TMultiplexedProtocol.php',
+        'Thrift\\Protocol\\TProtocol' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Protocol/TProtocol.php',
+        'Thrift\\Protocol\\TProtocolDecorator' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Protocol/TProtocolDecorator.php',
+        'Thrift\\Protocol\\TSimpleJSONProtocol' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Protocol/TSimpleJSONProtocol.php',
+        'Thrift\\Serializer\\TBinarySerializer' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Serializer/TBinarySerializer.php',
+        'Thrift\\Server\\TForkingServer' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Server/TForkingServer.php',
+        'Thrift\\Server\\TSSLServerSocket' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Server/TSSLServerSocket.php',
+        'Thrift\\Server\\TServer' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Server/TServer.php',
+        'Thrift\\Server\\TServerSocket' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Server/TServerSocket.php',
+        'Thrift\\Server\\TServerTransport' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Server/TServerTransport.php',
+        'Thrift\\Server\\TSimpleServer' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Server/TSimpleServer.php',
+        'Thrift\\StoredMessageProtocol' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/TMultiplexedProcessor.php',
+        'Thrift\\StringFunc\\Core' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/StringFunc/Core.php',
+        'Thrift\\StringFunc\\Mbstring' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/StringFunc/Mbstring.php',
+        'Thrift\\StringFunc\\TStringFunc' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/StringFunc/TStringFunc.php',
+        'Thrift\\TMultiplexedProcessor' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/TMultiplexedProcessor.php',
+        'Thrift\\Transport\\TBufferedTransport' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Transport/TBufferedTransport.php',
+        'Thrift\\Transport\\TCurlClient' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Transport/TCurlClient.php',
+        'Thrift\\Transport\\TFramedTransport' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Transport/TFramedTransport.php',
+        'Thrift\\Transport\\THttpClient' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Transport/THttpClient.php',
+        'Thrift\\Transport\\TMemoryBuffer' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Transport/TMemoryBuffer.php',
+        'Thrift\\Transport\\TNullTransport' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Transport/TNullTransport.php',
+        'Thrift\\Transport\\TPhpStream' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Transport/TPhpStream.php',
+        'Thrift\\Transport\\TSSLSocket' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Transport/TSSLSocket.php',
+        'Thrift\\Transport\\TSocket' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Transport/TSocket.php',
+        'Thrift\\Transport\\TSocketPool' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Transport/TSocketPool.php',
+        'Thrift\\Transport\\TTransport' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Transport/TTransport.php',
+        'Thrift\\Type\\TConstant' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Type/TConstant.php',
+        'Thrift\\Type\\TMessageType' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Type/TMessageType.php',
+        'Thrift\\Type\\TType' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Type/TType.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

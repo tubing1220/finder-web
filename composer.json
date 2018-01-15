@@ -5,6 +5,7 @@
         "slim/php-view": "^2.2",
         "aura/autoload": "^2.0",
         "fabpot/goutte": "^3.2",
-        "guzzlehttp/guzzle": "^6.3"
+        "guzzlehttp/guzzle": "^6.3",
+        "apache/thrift": "^0.11.0"
     }
 }
