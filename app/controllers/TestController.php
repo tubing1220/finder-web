@@ -3,28 +3,25 @@ namespace App\Controller;
 
 use \App\Lib\Service\TestService;
 
-use \Thrift\ClassLoader\ThriftClassLoader;
-use Thrift\Protocol\TBinaryProtocol;
-use Thrift\Transport\TSocket;
-use Thrift\Transport\THttpClient;
-use Thrift\Transport\TBufferedTransport;
-use Thrift\Exception\TException;
-
 class TestController extends BaseController {
 
-
-
+    /**
+     * 基础test用例
+     */
     public function test(){
 
 
         //var_dump($this->app);
         //var_dump($this->request);
         //var_dump($this->response);
-
+        /**
+         * 获取get参数
+         */
+        $data = $this->request->getQueryParams();
         /**
          * 获取post参数
          */
-        $data = $this->request->getParsedBody();
+        //$data = $this->request->getParsedBody();
 
         $output =  date('Y-m-d H:i:s',time()) .' Test is OK! ';
 
@@ -52,13 +49,26 @@ class TestController extends BaseController {
     }
 
 
+    /**
+     * 显示系统php信息
+     */
+    public function phpInfo(){
 
-    public function phpinfo(){
-
-echo phpinfo();
+        echo phpinfo();
 
     }
 
+
+    /**
+     * 显示系统php信息(公司内部测试接口，内网可用)
+     */
+    public function yarClient(){
+
+        $client = new \Yar_Client("dev.finder-web.com/yar");
+        $result = $client->api(array());
+        var_dump($result);
+
+    }
 
 
 }

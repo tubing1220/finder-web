@@ -15,4 +15,5 @@
 13:composer require GuzzleHttp
 14:add dbIndex.md record table tips
 15:composer require  apache/thrift
+16:add yarController and yar test example 
 

@@ -84,6 +84,20 @@ $container['view'] = new \Slim\Views\PhpRenderer('../app/views/');
 $_application = $app;
 
 //add routes
+
+$app->get('/yar', function (Request $request, Response $response, array $args) use ($app) {
+    $service = new \Yar_Server(new \App\Controller\YarController($app,$request,$response));
+    $service->handle();
+});
+
+$app->post('/yar', function (Request $request, Response $response, array $args) use ($app) {
+    $service = new \Yar_Server(new \App\Controller\YarController($app,$request,$response));
+    $service->handle();
+
+});
+
+
+
 //$app->get('/{class}/{method}', function(Request $request, Response $response) use ($app) {
 $app->get('/', function(Request $request, Response $response) use ($app) {
     $params = $request->getQueryParams();
@@ -95,7 +109,19 @@ $app->get('/', function(Request $request, Response $response) use ($app) {
     } else {
         $resource->$method();
     }
+});
 
+
+$app->post('/', function(Request $request, Response $response) use ($app) {
+    $params = $request->getQueryParams();
+    $class =$params['access'];
+    $method=$params['submit'];
+    $resource = \App\Controller\BaseController::load($app,$request,$response,$class);
+    if ($resource === null) {
+        $response->getBody()->write('Class' . $class . ' not found');
+    } else {
+        $resource->$method();
+    }
 
 });
 
