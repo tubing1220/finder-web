@@ -3,6 +3,13 @@ namespace App\Controller;
 
 use \App\Lib\Service\TestService;
 
+use \Thrift\ClassLoader\ThriftClassLoader;
+use Thrift\Protocol\TBinaryProtocol;
+use Thrift\Transport\TSocket;
+use Thrift\Transport\THttpClient;
+use Thrift\Transport\TBufferedTransport;
+use Thrift\Exception\TException;
+
 class TestController extends BaseController {
 
 
