@@ -53,5 +53,12 @@ class TestController extends BaseController {
 
 
 
+    public function phpinfo(){
+
+echo phpinfo();
+
+    }
+
+
 
 }
