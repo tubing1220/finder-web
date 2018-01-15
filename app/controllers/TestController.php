@@ -64,9 +64,8 @@ class TestController extends BaseController {
      */
     public function yarClient(){
 
-        $client = new \Yar_Client("dev.finder-web.com/yar");
+        $client = new \Yar_Client("http://dev.finder-web.com/yar");
         $result = $client->api(array());
-        var_dump($result);
 
     }
 

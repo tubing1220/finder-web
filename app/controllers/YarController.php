@@ -22,7 +22,7 @@ class YarController{
      * @return
      */
     public function api($parameter, $option = "foo") {
-        echo "visit successfully";
+        echo  "=====hello,tubing,zehong,junfei,zhengyi,visit successfully=====";
     }
 
     protected function client_can_not_see() {
