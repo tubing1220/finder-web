@@ -44,7 +44,7 @@ class TestController extends BaseController {
          */
         //$this->response->getBody()->write($output);
 
-        $this->app->getContainer()->view->render($this->response, 'test.phtml', ['test' => $output]);
+        //$this->app->getContainer()->view->render($this->response, 'test.phtml', ['test' => $output]);
 
     }
 

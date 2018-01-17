@@ -62,7 +62,7 @@ $container = $app->getContainer();
 $container['logger'] = function($c) {
     $logger = new \Monolog\Logger('my_logger');
     $date = date('Y-m-d',time());
-    $file_handler = new \Monolog\Handler\StreamHandler('/tmp/finder-web/'.$date.'/app.log');
+    $file_handler = new \Monolog\Handler\StreamHandler(__DIR__ . '/../tmp/'.$date.'/app.log');
     $logger->pushHandler($file_handler);
     return $logger;
 };
