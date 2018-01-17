@@ -31,7 +31,7 @@ $config = array(
         ['id'=>'10005','name'=>'工具资源','link'=>'/welcome/freebie','true_category_id'=>'5562b422e4b00c57d9b94b53'],
         ['id'=>'10006','name'=>'阅读','link'=>'/welcome/article','true_category_id'=>'5562b428e4b00c57d9b94b9d']],
 
-
+    'yar_test'=>'http://dev.finder-web.com/yar',
 
 
 

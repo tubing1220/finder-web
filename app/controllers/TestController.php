@@ -63,8 +63,8 @@ class TestController extends BaseController {
      * 显示系统php信息(公司内部测试接口，内网可用)
      */
     public function yarClient(){
-
-        $client = new \Yar_Client("http://dev.finder-web.com/yar");
+        $yar_address = $this->app->getContainer()->settings['yar_test'];
+        $client = new \Yar_Client($yar_address);
         $result = $client->api(array());
 
     }
