@@ -12,9 +12,15 @@ class ComposerStaticInit62a07ef19c4f389992481ce7340fbb16
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        'b9118ae149d0ad190a8abf45189312f2' => __DIR__ . '/..' . '/anerg2046/helper/src/helper.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'a' => 
+        array (
+            'anerg\\helper\\' => 13,
+            'anerg\\OAuth2\\' => 13,
+        ),
         'Y' => 
         array (
             'Yurun\\Until\\' => 12,
@@ -61,6 +67,14 @@ class ComposerStaticInit62a07ef19c4f389992481ce7340fbb16
     );
 
     public static $prefixDirsPsr4 = array (
+        'anerg\\helper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/anerg2046/helper/src',
+        ),
+        'anerg\\OAuth2\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/anerg2046/sns_auth/src',
+        ),
         'Yurun\\Until\\' => 
         array (
             0 => __DIR__ . '/..' . '/yurunsoft/yurun-event/Src',
@@ -562,6 +576,16 @@ class ComposerStaticInit62a07ef19c4f389992481ce7340fbb16
         'Yurun\\Until\\HttpRequest' => __DIR__ . '/..' . '/yurunsoft/yurun-http/HttpRequest.php',
         'Yurun\\Until\\HttpRequestMultipartBody' => __DIR__ . '/..' . '/yurunsoft/yurun-http/HttpRequestMultipartBody.php',
         'Yurun\\Until\\HttpResponse' => __DIR__ . '/..' . '/yurunsoft/yurun-http/HttpResponse.php',
+        'anerg\\OAuth2\\Driver\\qq' => __DIR__ . '/..' . '/anerg2046/sns_auth/src/Driver/qq.php',
+        'anerg\\OAuth2\\Driver\\weibo' => __DIR__ . '/..' . '/anerg2046/sns_auth/src/Driver/weibo.php',
+        'anerg\\OAuth2\\Driver\\weixin' => __DIR__ . '/..' . '/anerg2046/sns_auth/src/Driver/weixin.php',
+        'anerg\\OAuth2\\Driver\\wx_qrcode' => __DIR__ . '/..' . '/anerg2046/sns_auth/src/Driver/wx_qrcode.php',
+        'anerg\\OAuth2\\OAuth' => __DIR__ . '/..' . '/anerg2046/sns_auth/src/OAuth.php',
+        'anerg\\helper\\Encrypt' => __DIR__ . '/..' . '/anerg2046/helper/src/Encrypt.php',
+        'anerg\\helper\\Exception' => __DIR__ . '/..' . '/anerg2046/helper/src/Exception.php',
+        'anerg\\helper\\Http' => __DIR__ . '/..' . '/anerg2046/helper/src/Http.php',
+        'anerg\\helper\\Time' => __DIR__ . '/..' . '/anerg2046/helper/src/Time.php',
+        'anerg\\helper\\Xml' => __DIR__ . '/..' . '/anerg2046/helper/src/Xml.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

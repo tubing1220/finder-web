@@ -17,4 +17,5 @@
 15:composer require  apache/thrift
 16:add yarController and yar test example
 17:composer require yurunsoft/yurun-oauth-login
+18:composer require anerg2046/sns_auth
 

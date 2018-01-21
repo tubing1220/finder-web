@@ -7,6 +7,7 @@
         "fabpot/goutte": "^3.2",
         "guzzlehttp/guzzle": "^6.3",
         "apache/thrift": "^0.11.0",
-        "yurunsoft/yurun-oauth-login": "^1.2"
+        "yurunsoft/yurun-oauth-login": "^1.2",
+        "anerg2046/sns_auth": "^1.1"
     }
 }

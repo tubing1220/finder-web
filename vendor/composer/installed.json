@@ -1142,5 +1142,85 @@
             "MIT"
         ],
         "description": "YurunOAuthLogin是一个PHP 第三方登录授权 SDK，集成了QQ、微信、微博、Github等常用接口。可以轻松嵌入支持 PHP >= 5.4 的任何系统中。"
+    },
+    {
+        "name": "anerg2046/helper",
+        "version": "1.0.6.2",
+        "version_normalized": "1.0.6.2",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/anerg2046/helper.git",
+            "reference": "7e58d17ebd3bf6233de97795ca2d8b95b92e906e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/anerg2046/helper/7e58d17ebd3bf6233de97795ca2d8b95b92e906e.zip",
+            "reference": "7e58d17ebd3bf6233de97795ca2d8b95b92e906e",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.6.0"
+        },
+        "time": "2017-08-07T07:14:23+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "anerg\\helper\\": "src"
+            },
+            "files": [
+                "src/helper.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Coeus",
+                "email": "r.anerg@gmail.com"
+            }
+        ],
+        "description": "some helper libaray function"
+    },
+    {
+        "name": "anerg2046/sns_auth",
+        "version": "1.1.2",
+        "version_normalized": "1.1.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/anerg2046/sns_auth.git",
+            "reference": "670e7e85dbf42958661d5a3951668fc21fa51bed"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/anerg2046/sns_auth/670e7e85dbf42958661d5a3951668fc21fa51bed.zip",
+            "reference": "670e7e85dbf42958661d5a3951668fc21fa51bed",
+            "shasum": ""
+        },
+        "require": {
+            "anerg2046/helper": "^1.0",
+            "php": ">=5.6.0"
+        },
+        "time": "2017-11-02T08:09:08+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "anerg\\OAuth2\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Coeus",
+                "email": "r.anerg@gmail.com"
+            }
+        ],
+        "description": "weixin weibo qq sns oauth"
     }
 ]
