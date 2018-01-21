@@ -16,6 +16,6 @@
 14:add dbIndex.md record table tips
 15:composer require  apache/thrift
 16:add yarController and yar test example
-17:composer require yurunsoft/yurun-oauth-login
+17:composer require yurunsoft/yurun-oauth-login (deleted)
 18:composer require anerg2046/sns_auth
 
