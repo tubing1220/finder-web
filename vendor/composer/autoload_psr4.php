@@ -6,6 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Yurun\\Until\\' => array($vendorDir . '/yurunsoft/yurun-event/Src', $vendorDir . '/yurunsoft/yurun-http'),
+    'Yurun\\OAuthLogin\\' => array($vendorDir . '/yurunsoft/yurun-oauth-login/src'),
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
     'Symfony\\Component\\DomCrawler\\' => array($vendorDir . '/symfony/dom-crawler'),
     'Symfony\\Component\\CssSelector\\' => array($vendorDir . '/symfony/css-selector'),

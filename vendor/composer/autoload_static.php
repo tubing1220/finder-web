@@ -15,6 +15,11 @@ class ComposerStaticInit62a07ef19c4f389992481ce7340fbb16
     );
 
     public static $prefixLengthsPsr4 = array (
+        'Y' => 
+        array (
+            'Yurun\\Until\\' => 12,
+            'Yurun\\OAuthLogin\\' => 17,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
@@ -56,6 +61,15 @@ class ComposerStaticInit62a07ef19c4f389992481ce7340fbb16
     );
 
     public static $prefixDirsPsr4 = array (
+        'Yurun\\Until\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yurunsoft/yurun-event/Src',
+            1 => __DIR__ . '/..' . '/yurunsoft/yurun-http',
+        ),
+        'Yurun\\OAuthLogin\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yurunsoft/yurun-oauth-login/src',
+        ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
@@ -528,6 +542,26 @@ class ComposerStaticInit62a07ef19c4f389992481ce7340fbb16
         'Thrift\\Type\\TConstant' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Type/TConstant.php',
         'Thrift\\Type\\TMessageType' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Type/TMessageType.php',
         'Thrift\\Type\\TType' => __DIR__ . '/..' . '/apache/thrift/lib/php/lib/Thrift/Type/TType.php',
+        'Yurun\\OAuthLogin\\ApiException' => __DIR__ . '/..' . '/yurunsoft/yurun-oauth-login/src/ApiException.php',
+        'Yurun\\OAuthLogin\\Baidu\\OAuth2' => __DIR__ . '/..' . '/yurunsoft/yurun-oauth-login/src/Baidu/OAuth2.php',
+        'Yurun\\OAuthLogin\\Base' => __DIR__ . '/..' . '/yurunsoft/yurun-oauth-login/src/Base.php',
+        'Yurun\\OAuthLogin\\CSDN\\OAuth2' => __DIR__ . '/..' . '/yurunsoft/yurun-oauth-login/src/CSDN/OAuth2.php',
+        'Yurun\\OAuthLogin\\Coding\\OAuth2' => __DIR__ . '/..' . '/yurunsoft/yurun-oauth-login/src/Coding/OAuth2.php',
+        'Yurun\\OAuthLogin\\Gitee\\OAuth2' => __DIR__ . '/..' . '/yurunsoft/yurun-oauth-login/src/Gitee/OAuth2.php',
+        'Yurun\\OAuthLogin\\Github\\OAuth2' => __DIR__ . '/..' . '/yurunsoft/yurun-oauth-login/src/Github/OAuth2.php',
+        'Yurun\\OAuthLogin\\OSChina\\OAuth2' => __DIR__ . '/..' . '/yurunsoft/yurun-oauth-login/src/OSChina/OAuth2.php',
+        'Yurun\\OAuthLogin\\QQ\\OAuth2' => __DIR__ . '/..' . '/yurunsoft/yurun-oauth-login/src/QQ/OAuth2.php',
+        'Yurun\\OAuthLogin\\QQ\\OpenidMode' => __DIR__ . '/..' . '/yurunsoft/yurun-oauth-login/src/QQ/OpenidMode.php',
+        'Yurun\\OAuthLogin\\Weibo\\OAuth2' => __DIR__ . '/..' . '/yurunsoft/yurun-oauth-login/src/Weibo/OAuth2.php',
+        'Yurun\\OAuthLogin\\Weixin\\OAuth2' => __DIR__ . '/..' . '/yurunsoft/yurun-oauth-login/src/Weixin/OAuth2.php',
+        'Yurun\\OAuthLogin\\Weixin\\OpenidMode' => __DIR__ . '/..' . '/yurunsoft/yurun-oauth-login/src/Weixin/OpenidMode.php',
+        'Yurun\\Until\\BreakContinue' => __DIR__ . '/..' . '/yurunsoft/yurun-http/BreakContinue.php',
+        'Yurun\\Until\\ClassEvent' => __DIR__ . '/..' . '/yurunsoft/yurun-event/Src/ClassEvent.php',
+        'Yurun\\Until\\Download' => __DIR__ . '/..' . '/yurunsoft/yurun-http/Download.php',
+        'Yurun\\Until\\Event' => __DIR__ . '/..' . '/yurunsoft/yurun-event/Src/Event.php',
+        'Yurun\\Until\\HttpRequest' => __DIR__ . '/..' . '/yurunsoft/yurun-http/HttpRequest.php',
+        'Yurun\\Until\\HttpRequestMultipartBody' => __DIR__ . '/..' . '/yurunsoft/yurun-http/HttpRequestMultipartBody.php',
+        'Yurun\\Until\\HttpResponse' => __DIR__ . '/..' . '/yurunsoft/yurun-http/HttpResponse.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
