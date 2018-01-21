@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f87d08eaaa56460156ca74a354f4faf8",
+    "content-hash": "88d23e081aadf7603f8aa2406e33067b",
     "packages": [
         {
             "name": "anerg2046/helper",
@@ -1094,93 +1094,6 @@
                 "shim"
             ],
             "time": "2017-10-11T12:05:26+00:00"
-        },
-        {
-            "name": "yurunsoft/yurun-event",
-            "version": "v1.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Yurunsoft/YurunEvent.git",
-                "reference": "be8c60d8b8fc3d97e340afbe7da16f385ba940ee"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/Yurunsoft/YurunEvent/be8c60d8b8fc3d97e340afbe7da16f385ba940ee.zip",
-                "reference": "be8c60d8b8fc3d97e340afbe7da16f385ba940ee",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Yurun\\Until\\": "Src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "time": "2017-08-14T02:07:41+00:00"
-        },
-        {
-            "name": "yurunsoft/yurun-http",
-            "version": "v1.3.16",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Yurunsoft/YurunHttp.git",
-                "reference": "6a13acf8795874f8fbc02777f59764091be5c28b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/Yurunsoft/YurunHttp/6a13acf8795874f8fbc02777f59764091be5c28b.zip",
-                "reference": "6a13acf8795874f8fbc02777f59764091be5c28b",
-                "shasum": ""
-            },
-            "require": {
-                "yurunsoft/yurun-event": "1.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Yurun\\Until\\": "./"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "一个基于PHP cURL的开源HTTP类库，支持链式操作，省去繁杂的cURL使用方法。(An open source HTTP class library based on PHP cURL, support chain operations, eliminating the use of miscellaneous cURL methods.)",
-            "time": "2018-01-17T08:09:58+00:00"
-        },
-        {
-            "name": "yurunsoft/yurun-oauth-login",
-            "version": "v1.2.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Yurunsoft/YurunOAuthLogin.git",
-                "reference": "7a9e390d3facf150dfb4df5192fc593201ab5127"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://files.phpcomposer.com/files/Yurunsoft/YurunOAuthLogin/7a9e390d3facf150dfb4df5192fc593201ab5127.zip",
-                "reference": "7a9e390d3facf150dfb4df5192fc593201ab5127",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4",
-                "yurunsoft/yurun-http": "1.3.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Yurun\\OAuthLogin\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "YurunOAuthLogin是一个PHP 第三方登录授权 SDK，集成了QQ、微信、微博、Github等常用接口。可以轻松嵌入支持 PHP >= 5.4 的任何系统中。",
-            "time": "2018-01-19T07:19:12+00:00"
         }
     ],
     "packages-dev": [],
