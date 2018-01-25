@@ -43,6 +43,8 @@ $baz = new \Foo\Bar\Baz;
 var_dump($loader->getDebug());
  */
 
+
+
 //加载config.php
 $config = require __DIR__ . '/../config/config.php';
 
