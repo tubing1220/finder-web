@@ -72,10 +72,10 @@ class ShowController extends BaseController {
     <div class="frame main">
         <div class="imgList">
             <div class="item">
-                <img src="http://t1.qpic.cn/mblogpic/73f5bf6f67d7d5178da2/2000" alt="">
+                <img src="http://upload.ouliu.net/i/201801261056314pwu2.jpeg" alt="">
             </div>
             <div class="item">
-                <img src="http://t1.qpic.cn/mblogpic/d170426df509ade56904/2000" alt="">
+                <img src="http://upload.ouliu.net/i/201801261111168o1wy.png" alt="">
                 <div class="f7f7f7 text">
                     扫码下载程序羊 —— 照顾你的小情绪
                 </div>
