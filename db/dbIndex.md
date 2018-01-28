@@ -63,16 +63,6 @@
 |update_time|int|11|yes|修改时间|无|
 |is_del|tinyint|4|yes|是否已删除 0:未删除，1：已删除,默认:0|无|
 
-###	finder_article_category 标签表，存储库中所有的标签
-|字段|类型|长度|是否为空|说明|备注|
-|:-:|:-:|:-:|:-:|:--:|:-:|
-|category_id|int|11|no|主键、自增|分类id|
-|category_name|varchar|100|yes|文章分类标签|DEFAULT NULL|
-|order_sort|int|11|yes|显示顺序 用于排序|无|
-|create_time|int|11|yes|创建时间|无|
-|update_time|int|11|yes|修改时间|无|
-|is_del|tinyint|4|yes|是否删除|DEFAULT '0' COMMENT '0:未删除，1：已删除,default:0'|
-
 
 ###	finder_follow_user 关注的作者列表
 |字段|类型|长度|是否为空|说明|备注|

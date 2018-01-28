@@ -33,20 +33,6 @@ CREATE TABLE `finder_article` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='文章表';
 
 -- ----------------------------
--- Table structure for finder_article_category
--- ----------------------------
-DROP TABLE IF EXISTS `finder_article_category`;
-CREATE TABLE `finder_article_category` (
-  `category_id` int(11) NOT NULL AUTO_INCREMENT COMMENT '分类id',
-  `category_name` varchar(100) DEFAULT NULL COMMENT '文章分类标签',
-  `order_sort` int(11) DEFAULT NULL COMMENT '显示顺序 用于排序',
-  `create_time` int(11) DEFAULT NULL COMMENT '创建时间',
-  `update_time` int(11) DEFAULT NULL COMMENT '修改时间',
-  `is_del` tinyint(4) DEFAULT '0' COMMENT '0:未删除，1：已删除,default:0',
-  PRIMARY KEY (`category_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='文章分类标签表';
-
--- ----------------------------
 -- Table structure for finder_collection_artical
 -- ----------------------------
 DROP TABLE IF EXISTS `finder_collection_artical`;
